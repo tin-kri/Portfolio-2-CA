@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div>
+      <div className="">
         <h2>contact</h2>
 
         <ul>
