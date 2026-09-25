@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -11,8 +11,56 @@
   --color-khaki: #c2b18a; /* outlines, secondary button border */
 
   /* Fonts */
-  --font-archivo:
-    "Archivo Variable", sans-serif; /* body text, captions, lists */
-  --font-plex-mono:
+  --font-sans:
+    "Archivo", sans-serif; /* body text, captions, lists */
+  --font-mono:
     "IBM Plex Mono", monospace; /* headings, sections, nav, dates, buttons */
+
+   /* Font sizes: IBM Plex Mono */
+  --text-display: clamp(2rem, 1.5rem + 2vw, 2.75rem); /* landing text: hero + project title, 32→44px */
+  --text-display--line-height: 1.2;
+  --text-display--letter-spacing: 0.01em;
+  --text-label: 0.8125rem;   /* nav, section labels, buttons */
+  --text-label--line-height: 1.4;
+  --text-small: 0.6875rem;   /* dates, live site / github links, img captions */
+  --text-small--line-height: 1.4;
+  --text-small--letter-spacing: 0.02em;
+ 
+  /* Font sizes: Archivo */
+  --text-body: 0.875rem;     /* body, captions, project names, list items */
+  --text-body--line-height: 1.4;
+  --text-lead: 0.9375rem;    /* intro text on work detail */
+  --text-lead--line-height: 2.1;
+  --text-lead--letter-spacing: 0.02em;
+ 
+
+ 
+  /* Spacing */
+  --spacing-gutter: 1.5rem;   /* page side padding, mobile             */
+  --spacing-page: 6rem;       /* page side padding, desktop (~90–100px) */
+  --spacing-section: 9rem;    /* vertical padding of a full section    */
+  
+ 
+  /* Layout */
+  --container-page: 87rem;    /* max content width (~1390px) → max-w-page */
+ 
+
+
+  }
+
+@layer base {
+ body{
+   @apply bg-neutral-white text-pen-black; 
+ }
 }
+
+
+/* Section label: "education", "work", "stack", "contact" */
+@utility section-label {
+  @apply font-mono text-label text-pen-black underline-offset-2 hover:underline hover:text-muted-black;
+}
+ 
+
+ 
+
+
