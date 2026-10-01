@@ -57,7 +57,7 @@
 
 /* Section label: "education", "work", "stack", "contact" */
 @utility section-label {
-  @apply font-mono text-label text-pen-black underline-offset-2 hover:underline hover:text-muted-black;
+  @apply font-mono text-label text-pen-black ;
 }
  
 
