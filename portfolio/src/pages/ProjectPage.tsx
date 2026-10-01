@@ -11,8 +11,9 @@ export default function ProjectPage() {
     <article>
       <Link to="/"> Back</Link>
       <img src={project.image} alt={project.alt} />
+      <p>{project.imageDescription}</p>
       <h1>{project.title}</h1>
-      <p>{project.description}</p>
+      <p>{project.overview}</p>
     </article>
   );
 }
