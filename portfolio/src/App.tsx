@@ -1,14 +1,14 @@
 import "./App.css";
 import { Route, Routes } from "react-router";
 import LandingPage from "./pages/LandingPage";
-import ArticlePage from "./pages/ArticlePage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} /> 
-        <Route path="/article" element={<ArticlePage />} /> 
+        <Route path="/projects/:id" element={<ProjectPage />} /> 
       </Routes>
     </>
   );
