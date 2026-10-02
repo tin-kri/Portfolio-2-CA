@@ -49,6 +49,8 @@
   }
 
 @layer base {
+  :focus-visible { outline: 1px solid var(--color-pen-black); outline-offset: 3px; }
+
  body{
    @apply bg-neutral-white text-pen-black; 
  }

@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 const navLinks = [
-  { label: "experience", to: "/#experience" },
+  { label: "education", to: "/#education" },
   { label: "projects", to: "/#projects" },
   { label: "contact", to: "#contact" },
 ];
@@ -13,16 +13,18 @@ export default function Navbar() {
         <Link to="/" className="section-label  ">
           Tina Kristiansen
         </Link>
-        <nav aria-label="Main">
-          <ul className="flex gap-6 md:gap-12">
+        <nav aria-label="Tina Kristiansens Portfolio">
+          <ul role="menubar" className="flex gap-6 md:gap-12">
             {navLinks.map(({ label, to }) => (
-              <li key={label}>
-                <Link
-                  to={to}
-                  className="font-mono text-label  hover:font-bold hover:text-sage "
-                >
-                  {label}
-                </Link>
+              <li role="none">
+                <a role="menuitem" key={label}>
+                  <Link
+                    to={to}
+                    className="font-mono text-label  hover:font-bold hover:text-sage "
+                  >
+                    {label}
+                  </Link>
+                </a>
               </li>
             ))}
           </ul>

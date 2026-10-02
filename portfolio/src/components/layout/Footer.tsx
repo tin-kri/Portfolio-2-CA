@@ -28,6 +28,9 @@ export default function Footer() {
                   className="font-mono text-label underline-offset-2 hover:text-sage hover:font-bold underline"
                 >
                   {label}
+                   <span className="sr-only">
+                  for {label} (opens in new tab)
+                </span>
                 </a>
               </li>
             );

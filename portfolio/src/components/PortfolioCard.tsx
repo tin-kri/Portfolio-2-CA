@@ -45,7 +45,6 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
               >
                 {label}
                 <span className="sr-only">
-                  {" "}
                   for {project.title} (opens in new tab)
                 </span>
               </a>
