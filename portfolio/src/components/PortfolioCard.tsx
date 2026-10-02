@@ -41,7 +41,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-small text-muted-black underline underline-offset-2 hover:text-pen-black"
+                className="font-mono text-small text-muted-black underline underline-offset-2 hover:text-sage hover:font-bold"
               >
                 {label}
                 <span className="sr-only">

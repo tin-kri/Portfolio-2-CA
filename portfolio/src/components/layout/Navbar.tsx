@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 
 const navLinks = [
-  { label: "work", to: "/#work" },
   { label: "experience", to: "/#experience" },
+  { label: "projects", to: "/#projects" },
   { label: "contact", to: "#contact" },
 ];
 
@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className="bg-neutral-white px-gutter py-gutter md:px-page">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <Link to="/" className="text-label">
+        <Link to="/" className="section-label  ">
           Tina Kristiansen
         </Link>
         <nav aria-label="Main">
@@ -19,7 +19,7 @@ export default function Navbar() {
               <li key={label}>
                 <Link
                   to={to}
-                  className="font-mono text-label underline-offset-2 hover:underline"
+                  className="font-mono text-label  hover:font-bold hover:text-sage "
                 >
                   {label}
                 </Link>

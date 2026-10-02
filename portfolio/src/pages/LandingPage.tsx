@@ -1,17 +1,14 @@
 import AboutSection from "../components/AboutSection";
-import WorkSection from "../components/WorkSection";
+import IntroductionSection from "../components/IntroductionSection";
 
-import ProjectList from "../components/ProjectList";
+import ProjectSection from "../components/ProjectSection";
 
 export default function LandingPage() {
   return (
     <div className="">
-      <h1 className="font-plex-mono text-6xl">Landing Page</h1>
-      <p className="font-archivo text-4xl">Some text about something</p>
+      <IntroductionSection />
       <AboutSection />
-      <WorkSection />
-
-      <ProjectList />
+      <ProjectSection />
     </div>
   );
 }
