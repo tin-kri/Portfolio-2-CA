@@ -20,7 +20,7 @@ export default function Navbar() {
                 <a role="menuitem" key={label}>
                   <Link
                     to={to}
-                    className="font-mono text-label  hover:font-bold hover:text-sage "
+                    className="font-mono text-label   hover:text-sage hover:underline underline-offset-2 "
                   >
                     {label}
                   </Link>
