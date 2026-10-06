@@ -1,4 +1,3 @@
-import image from "../assets/placeholder.jpg";
 import droppauction from "../assets/droppauction.png";
 import dropplanding from "../assets/dropplanding.png";
 import storefrontlanding from "../assets/storefrontlanding.png";
