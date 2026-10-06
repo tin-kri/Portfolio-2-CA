@@ -3,6 +3,8 @@ import droppauction from "../assets/droppauction.png";
 import dropplanding from "../assets/dropplanding.png";
 import storefrontlanding from "../assets/storefrontlanding.png";
 import storefrontproduct from "../assets/storefrontproduct.png";
+import bloglandingpage from "../assets/bloglandingpage.png";
+import blogcarousel from "../assets/blogcarousel.png";
 
 export interface Project {
   id: string;
@@ -25,8 +27,8 @@ export const projects = [
     title: "DROPP",
     image: dropplanding,
     image2: droppauction,
-    alt: "picture of project",
-    alt2: "",
+    alt: "landing page for the auction page",
+    alt2: "Product detail page for the auction store",
     caption: "DROPP, auction item detail page.",
     description:
       "An online auction platform where users can list items, place bids and track auctions in real time, built with vanilla JavaScript, Vite and Tailwind CSS on top of the Noroff Auction API.",
@@ -46,11 +48,11 @@ export const projects = [
   {
     title: "Blog",
     id: "exam-project",
-    image: image,
-    image2: storefrontproduct,
-    alt: "picture of project",
-    alt2: "",
-    caption: "This is the landing page ",
+    image: bloglandingpage,
+    image2: blogcarousel,
+    alt: "landing page for the blog project",
+    alt2: "close up of the carousel in the blog project",
+    caption: "Latest blog posts carousel",
     description:
       "A blog website built as my first-year exam project at Noroff, using WordPress as a headless CMS via the WordPress REST API.",
     main: "The site's content is stored in a WordPress installation used as a headless CMS, and the front end fetches and renders it dynamically with JavaScript. The landing page features a custom JavaScript carousel showcasing the latest posts. The blog page initially displays the first nine posts, with a view more option that loads additional posts below the existing ones. Each blog post page is built dynamically using a query string parameter taken from the link the user clicks. On the post pages, clicking an image opens it in a modal for a larger view, and clicking outside the image closes it. The contact page uses JavaScript form validation to make sure user input is correct before submission.",
