@@ -20,7 +20,7 @@ export default function AboutSection() {
     <section
       id="experience"
       className="bg-greige px-gutter py-20 md:px-page md:py-24"
-      aria-labelledby="education-heading, focus-heading"
+      aria-labelledby="education-heading focus-heading"
     >
       <div className=" grid gap-16 md:grid-cols-2 ">
         <div>

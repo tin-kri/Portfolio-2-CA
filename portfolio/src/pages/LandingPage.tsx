@@ -5,10 +5,10 @@ import ProjectSection from "../components/ProjectSection";
 
 export default function LandingPage() {
   return (
-    <div className="">
+    <main className="">
       <IntroductionSection />
       <AboutSection />
       <ProjectSection />
-    </div>
+    </main>
   );
 }

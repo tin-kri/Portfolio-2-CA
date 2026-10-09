@@ -18,7 +18,7 @@ export default function ProjectPage() {
     );
 
   return (
-    <div className="px-gutter pt-8 pb-20  md:px-page md:pt-16 md:pb-section">
+    <main className="px-gutter pt-8 pb-20  md:px-page md:pt-16 md:pb-section">
       <div></div>
       <article className="mt-10 flex flex-col gap-14 md:grid md:grid-cols-3 md:gap-8">
         <div>
@@ -76,6 +76,6 @@ export default function ProjectPage() {
           <p className="mt-4 text-body leading-relaxed">{project.main}</p>
         </div>
       </article>
-    </div>
+    </main>
   );
 }
